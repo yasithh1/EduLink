@@ -1,0 +1,94 @@
+/* General layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #c2bfbf;
+}
+
+/* Content Container */
+.content-container {
+    flex: 2;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    left:172%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Light shadow for better visibility */
+    margin-left: 10%; /* Smaller left margin to bring the content closer to the image */
+}
+
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    align-items: center;
+    padding: -60px;
+    margin: 0; /* Remove any margins */
+    position: absolute; /* Make the image float to the left corner */
+    left: 50%; /* Align it to the left */
+    top: 50%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust centering */
+}
+
+.motivation-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    margin-left: -60%;
+    position: relative;
+    left: -30%;
+}
+
+/* Content Container */
+.content-container {
+    flex: 2;
+    padding: 60px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Light shadow for better visibility */
+    margin-left: 30%; /* Add margin to the left to give space for the image */
+}
+
+.motivation-title {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.motivation-content {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .motivation-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container {
+        position: relative;
+        margin-bottom: 20px;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .content-container {
+        margin-left: 0;
+    }
+
+    .motivation-title {
+        font-size: 1.8em;
+    }
+
+    .motivation-content {
+        font-size: 1.1em;
+    }
+}
