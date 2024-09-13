@@ -1,0 +1,66 @@
+/* Header.css */
+
+.header {
+  background: linear-gradient(to bottom, #333, #444);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 20px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 160px;
+  margin-right: auto; /* added margin-right: auto */
+}
+
+.header-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* changed to flex-end */
+  align-items: center;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #ccc;
+  transform: scale(1.1); /* added scale effect */
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    flex-direction: column;
+  }
+  .header-nav li {
+    margin-bottom: 10px;
+  }
+}
+
