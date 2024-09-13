@@ -1,0 +1,92 @@
+/* Container for the form and backdrop */
+.edit-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Make sure the form is on top */
+}
+
+/* The form styling */
+.edit-form {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Label for form fields */
+.edit-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input field styling */
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Update button */
+.edit-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel button */
+.edit-form button[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Add a little responsiveness */
+@media (max-width: 500px) {
+  
+  .edit-form {
+    padding: 15px;
+    width: 90%;
+  }
+  
+  .edit-form input {
+    font-size: 14px;
+  }
+  
+  .edit-form button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+}
+

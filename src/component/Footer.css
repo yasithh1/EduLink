@@ -1,0 +1,48 @@
+/* Ensure the body and html cover the full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main container for full height */
+.app-container {
+  min-height: 100vh; /* Full height to push footer to the bottom if content is short */
+  display: flex;
+  flex-direction: column; /* Stack content and footer vertically */
+}
+
+.footer {
+  background-color: rgb(3, 87, 87); /* Background color of the container */
+  color: white;
+  padding: 20px;  
+  text-align: center;
+  margin-bottom: 10%;
+  width: 149%;
+  box-sizing: border-box;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
